@@ -90,7 +90,7 @@ RunBot:write([[
 cd $HOME/Afnan
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr Afnan.lua
-wget "https://raw.githubusercontent.com/dev-sonic/Afnan/master/Afnan.lua"
+wget "https://raw.githubusercontent.com/afnan505/Afnan/master/Afnan.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./Afnan.lua -p PROFILE --bot=$token
