@@ -93,7 +93,7 @@ rm -fr Afnan.lua
 wget "https://raw.githubusercontent.com/dev-sonic/Afnan/master/Afnan.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./BoykA.lua -p PROFILE --bot=$token
+./tg -s ./Afnan.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
@@ -104,7 +104,7 @@ cd $HOME/Afnan
 while(true) do
 rm -fr ../.telegram-cli
 screen -S Afnan -X kill
-screen -S Afnan ./BoykA
+screen -S Afnan ./Afnan
 done
 ]])
 RunTs:close()
