@@ -8352,9 +8352,9 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'Afnan').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'Afnan')
 local Afnan_Msg = {
-'عمغي 🥺💕.',
-'هاا شتريد كافي ☹️.',
-'مشايف بوت شني 😂.',
+'لبيه .',
+'هاا شتريد كافي .',
+'مشايف بوت شني .',
 'كول حبيبي ؟ اني '..Namebot..'',
 'مشغول حالياً',
 'عمري فداك '..Namebot..' كول حب'
@@ -8601,6 +8601,9 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..P..'&caption=' .. URL.escape(ttx).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..P..'&caption=' .. URL.escape(ttx).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboar
 if text == ("ردود المطور") and DevAfnanW(msg) then 
 local list = database:smembers(bot_id..'List:Rd:Sudo')
 text = "\n ٭ قائمة ردود المطور \n*•━━━━━━  ━━━━━━━•*\n"
@@ -9711,10 +9714,10 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n٭ ايديك ↫ '..msg.sender_user_id_..'\n٭ معرفك ↫ '..username..'\n٭ رتبتك ↫ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n٭ موقعك ↫ '..rtpa..'\n٭ تفاعلك ↫ '..Total_Msg(Msguser)..'\n٭ رسائلك ↫ '..Msguser..'\n٭ البايو ↫ '..getbioY..' \n٭ السحكات ↫ '..edit..'\n٭ نقاطك ↫ '..NUMPGAME..'\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, amir.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n٭ ايديك ↫ '..msg.sender_user_id_..'\n٭ معرفك ↫ '..username..'\n٭-› رتبتك ↫ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n٭ موقعك ↫ '..rtpa..'\n٭ تفاعلك ↫ '..Total_Msg(Msguser)..'\n٭ رسائلك ↫ '..Msguser..'\n٭ البايو ↫ '..getbioY..' \n٭ السحكات ↫ '..edit..'\n٭ نقاطك ↫ '..NUMPGAME..'\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n٭ ايديك ↫ '..msg.sender_user_id_..'\n٭ معرفك ↫ '..username..'\n٭ رتبتك ↫ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n٭ موقعك ↫ '..rtpa..'\n٭ تفاعلك ↫ '..Total_Msg(Msguser)..'\n٭ رسائلك ↫ '..Msguser..'\n٭ البايو ↫ '..getbioY..' \n٭ السحكات ↫ '..edit..'\n٭ نقاطك ↫ '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_,'[\n٭-› ايديك 𖦹 '..msg.sender_user_id_..'\n٭ معرفك 𖦹 '..username..'\n٭ رتبتك ↫ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n٭-› موقعك ↫ '..rtpa..'\n٭ تفاعلك ↫ '..Total_Msg(Msguser)..'\n٭ رسائلك ↫ '..Msguser..'\n٭ البايو ↫ '..getbioY..' \n٭ السحكات ↫ '..edit..'\n٭ نقاطك ↫ '..NUMPGAME..']\n')
 else
 send(msg.chat_id_, msg.id_, '\n٭ الصوره ↫ ليس لديك صور في حسابك'..'[\n٭ ايديك ↫ '..msg.sender_user_id_..'\n٭ معرفك ↫ '..username..'\n٭ رتبتك ↫ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n٭ موقعك ↫ '..rtpa..'\n٭ تفاعلك ↫ '..Total_Msg(Msguser)..'\n٭ رسائلك ↫ '..Msguser..'\n٭ البايو ↫ '..getbioY..' \n٭ السحكات ↫ '..edit..'\n٭ نقاطك ↫ '..NUMPGAME..']\n')
 end 
