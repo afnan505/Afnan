@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-cd $HOME/Afnan
+cd $HOME/BoykA
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Afnan
+chmod +x BoykA
 chmod +x Run
 ./Run
 }
