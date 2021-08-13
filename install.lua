@@ -87,24 +87,24 @@ http.request("https://boyka-api.ml/index.php?n=BOYKA-DeV&id="..database:get(Serv
 local RunBot = io.open("BoykA", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/Afnan
+cd $HOME/BoykA
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr Afnan.lua
-wget "https://raw.githubusercontent.com/afnan505/Afnan/master/Afnan.lua"
+rm -fr Boyka.lua
+wget "https://raw.githubusercontent.com/afnan505/Afnan/master/BoykA.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./Afnan.lua -p PROFILE --bot=$token
+./tg -s ./BoykA.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("Run", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/Afnan
+cd $HOME/BoykA
 while(true) do
 rm -fr ../.telegram-cli
-screen -S Afnan -X kill
-screen -S Afnan ./Afnan
+screen -S BoykA -X kill
+screen -S BoykA ./BoykA
 done
 ]])
 RunTs:close()
