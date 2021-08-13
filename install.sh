@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/BoykA
+cd $HOME/Afnan
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
