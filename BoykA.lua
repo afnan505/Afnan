@@ -176,7 +176,7 @@ var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1271545929) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1740602430) then
-var = 'Telegram Developer'
+var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
@@ -2322,10 +2322,10 @@ database:set(bot_id..'Num:Add:Bot',Num)
 send(msg.chat_id_, msg.id_,' *٭ تم تعيين عدد الاعضاء سيتم تفعيل الجروبات التي اعضائها اكثر من  >> {'..Num..'} عضو*')
 end
 if text == 'تحديث السورس' and DevAfnanW(msg) then 
-os.execute('rm -rf Afnan.lua')
-os.execute('wget https://raw.githubusercontent.com/afnan505/Afnan/master/Afnan.lua')
+os.execute('rm -rf BoykA.lua')
+os.execute('wget https://raw.githubusercontent.com/afnan505/Afnan/master/BoykA.lua')
 send(msg.chat_id_, msg.id_,' *٭ تم تحديث السورس* \n*٭ لديك اخر اصدار لسورس Afnan*\n*٭ الاصدار » { 1.0}*')
-dofile('Afnan.lua')  
+dofile('BoykA.lua')  
 end
 if text and text:match("^تغير الاشتراك$") and DevAfnanW(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
@@ -8566,7 +8566,7 @@ local Text =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' 𝗗𝗘𝗩 .', url = "https://t.me/AfnanILA"}
+{text = ' 𝗗𝗘𝗩 .', url = "https://t.me/AAAAF"}
 },
 {
 {text = ' 𝙎𝙊𝙐𝙍𝘾𝙀 .', url = "https://t.me/saaaa"}
