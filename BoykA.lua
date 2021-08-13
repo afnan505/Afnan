@@ -173,10 +173,10 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(962203100) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1271545929) then
+elseif tonumber(user_id) == tonumber(1634560089) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1740602430) then
-var = 'مطور السورس'
+var = 'مبرمجة السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
