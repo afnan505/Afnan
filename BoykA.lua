@@ -16,7 +16,7 @@ print([[
 # | | \ \| |____ \ / | |__| | | \ \ 
 # |_| \_\______| \/ \____/|_| \_\
 
-~> DEVELOPER › @AAAAF -sonic
+~> DEVELOPER › @AAAAF
 ]])
 if io.open("library/redis.lua","r") then
 io.close(io.open("library/redis.lua","r"))
@@ -1108,7 +1108,7 @@ UserName = "]]..data.username_..[["
 ]])
 A:close()
 database:del(bot_id.."Ed:DevBots")
-dofile('Afnan.lua')  
+dofile('BoykA.lua')  
 else
 send(msg.chat_id_,msg.id_, "-› عذرا صاحب الايدي لا يمتلك معرف ارسل ايدي اخر")
 end
@@ -1123,8 +1123,8 @@ if text =='تغيير المطور الاساسي -' and not SudoBot(msg) then
 send(msg.chat_id_, msg.id_,'-› لا يمكنك تغيير المطور الاساسي')
 end
 if text == 'تحديث السورس -' and DevAfnanW(msg) then 
-os.execute('rm -rf Afnan.lua')
-os.execute('wget https://raw.githubusercontent.com/afnan505/Afnan/master/Afnan.lua')
+os.execute('rm -rf BoykA.lua')
+os.execute('wget https://raw.githubusercontent.com/afnan505/Afnan/master/BoykA.lua')
 send(msg.chat_id_, msg.id_,' -› تم تحديث السورس \n-› لديك اخر اصدار لسورس Afnan\n-› الاصدار » { 2.8v}')
 dofile('Afnan.lua')  
 end
