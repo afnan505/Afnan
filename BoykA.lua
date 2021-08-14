@@ -7899,17 +7899,17 @@ database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,tru
 local Text= [[
  *٭ ارسل الان النص*
 *٭ يمكنك اضافه :*
- *٭ #rdphoto ↫ تعليق الصوره*
- *٭ #username ↫ اسم* 
- *٭ #msgs ↫ عدد رسائل* 
- *٭ #photos ↫ عدد صور* 
- *٭ #bio ↫ البايو* 
-  *٭ #custom ↫ اللقب* 
- *٭ #id ↫ ايدي* 
- *٭ #auto ↫ تفاعل* 
- *٭ #stast ↫ موقع*  
- *٭ #edit ↫ السحكات*
- *٭ #game ↫ النقاط*
+  #rdphoto ↫ تعليق الصوره
+  #username ↫ اسم 
+  #msgs ↫ عدد رسائل 
+  #photos ↫ عدد صور 
+  #bio ↫ البايو 
+  #custom ↫ اللقب 
+  #id ↫ ايدي 
+  #auto ↫ تفاعل 
+  #stast ↫ موقع  
+  #edit ↫ السحكات
+  #game ↫ التقاط
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false  
@@ -8985,7 +8985,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'Afnan')
+Namebot = (database:get(bot_id..'Name:Bot') or 'افنان')
 send(msg.chat_id_, msg.id_,'*اسمي '..Namebot..'* ')
 end
 if text == 'الاحصائيات' then
